@@ -1,0 +1,333 @@
+/*GENERALES*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*NAV*/
+.container-fluid img{
+    width: 10%;
+}
+
+.container-fluid a{
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.collapse{
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+.active{
+    color: white !important;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.menu-verde{
+    color: rgb(94, 223, 94) !important;
+}
+
+/*SECTION 1*/
+.img-hawaii{
+    width: 100%;
+    height: 100%;
+    filter:brightness(0.5);
+}
+
+.conteiner-section1{
+    position: relative;
+}
+
+.div-texto-section1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: right;
+    padding-left: 38%;
+    margin-right: -30%;
+}
+
+.boton-comprar{
+    background-color: rgb(23, 206, 23);
+    color: white;
+}
+
+/*SECTION 2*/
+
+.section-2{
+    height: 620px;
+    padding: 1%;
+    text-align: center;
+}
+
+.div-texto-section-dos p{
+    margin-bottom: 0rem;
+    font-size: 12px;
+}
+
+.card-oradores{
+    width: 20rem;
+    height: 32rem;
+    text-align: left;
+}
+
+.card-oradores p{
+    font-size: 12px;
+}
+
+.card-oradores h3{
+    font-size: 20px;
+}
+
+.conteiner-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly ;
+    align-items: center ;
+}
+
+/*botones*/
+.boton-general{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0rem;
+    width: 22%;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.btn-info{
+    width: 15%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0rem;
+    margin-bottom: 2%;
+    color: white;
+    background-color: rgb(22, 155, 179);
+    border-color: rgb(22, 155, 179);
+}
+
+.btn-warning{
+    width: 23%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0rem;
+    margin-bottom: 2%;
+}
+
+/*SECTION 3*/
+.container-section-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div-texto-section-3{
+    border-left: 1px solid white;
+    padding: 2%;
+    color: white;
+    font-size: 13px;
+}
+
+.div-img-honolulu img{
+    width: 100%;
+}
+
+/*SECTION 4*/
+.section-4{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-texto-section-4{
+    text-align: center;
+}
+
+.titulo-p{
+    font-size: 12px;
+    margin-bottom: 0.2rem;
+}
+
+.div-texto-section-4 h4{
+    font-size: 30px;
+}
+
+/*form*/
+.form-orador{
+    width: 50%;
+}
+
+.form-orador button{
+    width: 100%;
+    background-color: rgb(141, 211, 36);
+    border: none;
+}
+
+.div-nombre-apellido{
+    display: flex;
+}
+
+.inputs-form{
+    width: 50%;
+}
+
+.input-nombre{
+    margin-right: 6%;
+}
+
+.div-nombre-apellido input{
+    width: 100%;
+}
+
+/*FOOTER*/
+.footer{
+    height: 85px;
+    background: rgb(90,124,161);
+    background: linear-gradient(257deg, rgba(90,124,161,1) 9%, rgba(52,79,108,1) 61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.a-footer{
+    padding-right: 5rem;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 991px) {
+    /*NAV*/
+    .collapse{
+        justify-content: left;
+    }
+    .container-fluid img{
+        width: 5rem;
+    }
+}
+
+@media screen and (max-width: 894px) {
+    /*SECTION1*/
+    .div-texto-section1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    /*SECTION2*/
+    .section-2{
+        height: auto;
+    }
+    .conteiner-cards{
+        flex-direction: column;
+    }
+    .card-oradores{
+        margin-bottom: 2%;
+    }
+
+    /*FOOTER*/
+    .footer a{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 774px) {
+    /*SECTION 3*/
+    .container-section-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-texto-section-3{
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 688px) {
+    /*SECTION 4*/
+    .div-nombre-apellido{
+        flex-direction: column;
+    }
+    .inputs-form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .a-footer{
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    /*SECTION 1*/
+    .div-texto-section1 p{
+        font-size: 12px;
+    }
+    .div-texto-section1 h1{
+        font-size: 15px;
+    }
+    .div-texto-section1 button{
+        font-size: 12px;
+    }
+
+    /*SECTION 3*/
+    .div-texto-section-3{
+        padding: 4%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /*SECTION 1*/
+    .img-hawaii{
+        height: 300px;
+    }
+    
+    /*SECTION 2*/
+    .card-oradores{
+        width: 250px;
+        height: auto;
+    }
+    .btn-warning{
+        width: 30%;
+    }
+    .btn-info{
+        width: 20%;
+    }
+    .boton-general{
+        width: 28%;
+    }
+
+    /*SECTION 4*/
+    .form-orador{
+        width: 100%;
+    }
+
+    /*FOOTER*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-top: 2%;
+    }
+    .footer a{
+        padding-bottom: 2%;
+    }
+    .a-footer{
+        padding-right: 0rem;
+    }
+}
