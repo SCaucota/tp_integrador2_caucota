@@ -59,6 +59,20 @@
     color: white;
 }
 
+.boton-comprar:hover{
+    background-color: black !important;
+}
+
+.boton-orador:hover{
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.div-texto-section1 a{
+    color: white;
+    text-decoration: none;
+}
+
 /*SECTION 2*/
 
 .section-2{
@@ -329,5 +343,122 @@
     }
     .a-footer{
         padding-right: 0rem;
+    }
+}
+
+/*--------COMPRAR TICKETS--------*/
+
+.main-tickets{
+    margin: 5% 20% 5% 20%;
+}
+
+/*SECCIÓN DESCUENTOS*/
+
+.descuentos-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.descuento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+}
+
+.descuento h2,
+.descuento h3,
+.descuento h5{
+    padding-bottom: 20px;
+}
+
+.estudiante{
+    border: 2px solid rgb(28, 133, 232);
+}
+
+.trainee{
+    border: 2px solid rgb(81, 203, 81);
+}
+
+.junior{
+    border: 2px solid rgb(255, 192, 18);
+}
+
+/*SECCIÓN VENTA*/
+
+.venta-tickets-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.venta-tickets-section input,
+.venta-tickets-section select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-bottom: 5%;
+}
+
+.venta-tickets-section label{
+    margin-bottom: 2%;
+}
+
+.venta-tickets-section h1{
+    margin-bottom: 2%;
+}
+
+.venta-tickets-section button{
+    width: 100%;
+}
+
+.contenedor-form{
+    width: 100%;
+}
+
+.button-container-b-r{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.dos-elementos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.total{
+    background-color: rgb(101, 197, 216);
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+@media screen and (max-width: 1520px){
+    .descuentos-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+
+    .descuento{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 687px){
+    .dos-elementos{
+        display: flex;
+        flex-direction: column;
     }
 }
